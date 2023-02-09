@@ -1,0 +1,45 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(30, 30, 30);
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 2px solid lightgray;
+}
+
+h1 {
+  text-align: center;
+  color: #a4ff00;
+}
+
+label {
+  color: #a4ff00;
+}
+
+#botaoCalcular {
+  background-color: #a4ff00;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  background-color: gray;
+  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 20px;
+}
+
+.calculo {
+  width: 300px;
+}
+
+.calculoResultado {
+  font-size: 1.5em;
+  color: white;
+}
