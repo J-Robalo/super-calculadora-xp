@@ -20,8 +20,22 @@ label {
   color: #a4ff00;
 }
 
+#primeiroNumero,
+#segundoNumero {
+  font-size: 15px;
+}
+
 #botaoCalcular {
   background-color: #a4ff00;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.entradas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .flex {
@@ -29,14 +43,20 @@ label {
 }
 
 main {
-  background-color: gray;
+  background-color: rgb(63, 60, 60);
   border-bottom-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   padding: 20px;
 }
 
 .calculo {
   width: 300px;
+  border: 2px solid black;
+  padding-left: 15px;
+}
+
+.calculoRotulo {
+  color: rgb(111, 111, 174);
 }
 
 .calculoResultado {
