@@ -18,84 +18,86 @@
       <input type="number" name="primeiroNumero" id="primeiroNumero" value="3">
       <label for="segundoNumero">Segundo número (B):</label>
       <input type="number" name="segundoNumero" id="segundoNumero" value="2">
-      <input type="submit" id="botaoCalcular" value="Calcular" onclick="">
+      <input type="submit" id="botaoCalcular" value="Calcular" onclick="calcular()">
     </div>
   </header>
 
   <main>
-    <div class="flex">
-      <section class="calculo">
-        <p class="calculoRotulo">Soma</p>
-        <p class="calculoResultado" id="soma"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Subtração A - B</p>
-        <p class="calculoResultado" id="subtracaoA"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Subtração B - A</p>
-        <p class="calculoResultado" id="subtracaoB"></p>
-      </section>
-    </div>
+    <div class="bordaGeral">
+      <div class="flex">
+        <section class="calculo">
+          <p class="calculoRotulo">Soma</p>
+          <p class="calculoResultado" id="soma"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Subtração A - B</p>
+          <p class="calculoResultado" id="subtracaoA"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Subtração B - A</p>
+          <p class="calculoResultado" id="subtracaoB"></p>
+        </section>
+      </div>
 
-    <div class="flex">
-      <section class="calculo">
-        <p class="calculoRotulo">Multiplicação</p>
-        <p class="calculoResultado" id="multiplicacao"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Divisão A / B</p>
-        <p class="calculoResultado" id="divisaoA"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Divisão B / A</p>
-        <p class="calculoResultado" id="divisaoB"></p>
-      </section>
-    </div>
+      <div class="flex">
+        <section class="calculo">
+          <p class="calculoRotulo">Multiplicação</p>
+          <p class="calculoResultado" id="multiplicacao"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Divisão A / B</p>
+          <p class="calculoResultado" id="divisaoA"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Divisão B / A</p>
+          <p class="calculoResultado" id="divisaoB"></p>
+        </section>
+      </div>
 
-    <div class="flex">
-      <section class="calculo">
-        <p class="calculoRotulo">Potência de A na base B</p>
-        <p class="calculoResultado" id="potenciaA"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Potência de B na base A</p>
-        <p class="calculoResultado" id="potenciaB"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Raiz quadrada de A</p>
-        <p class="calculoResultado" id="raizA"></p>
-      </section>
-    </div>
+      <div class="flex">
+        <section class="calculo">
+          <p class="calculoRotulo">Potência de A na base B</p>
+          <p class="calculoResultado" id="potenciaA"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Potência de B na base A</p>
+          <p class="calculoResultado" id="potenciaB"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Raiz quadrada de A</p>
+          <p class="calculoResultado" id="raizA"></p>
+        </section>
+      </div>
 
-    <div class="flex">
-      <section class="calculo">
-        <p class="calculoRotulo">Raiz quadrada de B</p>
-        <p class="calculoResultado" id="raizB"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Fatorial de A</p>
-        <p class="calculoResultado" id="fatorialA"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Fatorial de B</p>
-        <p class="calculoResultado" id="fatorialB"></p>
-      </section>
-    </div>
+      <div class="flex">
+        <section class="calculo">
+          <p class="calculoRotulo">Raiz quadrada de B</p>
+          <p class="calculoResultado" id="raizB"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Fatorial de A</p>
+          <p class="calculoResultado" id="fatorialA"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Fatorial de B</p>
+          <p class="calculoResultado" id="fatorialB"></p>
+        </section>
+      </div>
 
-    <div class="flex">
-      <section class="calculo">
-        <p class="calculoRotulo">Porcentagem de A em relação a B</p>
-        <p class="calculoResultado" id="porcentagemA"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Porcentagem de B em relação a A</p>
-        <p class="calculoResultado" id="porcentagemB"></p>
-      </section>
-      <section class="calculo">
-        <p class="calculoRotulo">Média</p>
-        <p class="calculoResultado" id="media"></p>
-      </section>
+      <div class="flex">
+        <section class="calculo">
+          <p class="calculoRotulo">Porcentagem de A em relação a B</p>
+          <p class="calculoResultado" id="porcentagemA"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Porcentagem de B em relação a A</p>
+          <p class="calculoResultado" id="porcentagemB"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Média</p>
+          <p class="calculoResultado" id="media"></p>
+        </section>
+      </div>
     </div>
   </main>
 

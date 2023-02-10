@@ -46,6 +46,60 @@ function calculoSubtracaoB(b, a) {
   return b - a;
 }
 
+function calculoMultiplicacao(a, b) {
+  return a * b;
+}
+
+function calculoDivisaoA(a, b) {
+  return (a / b).toFixed(2);
+}
+
+function calculoDivisaoB(b, a) {
+  return (b / a).toFixed(2);
+}
+
+function calculoPotenciaA(a, b) {
+  return a ** b;
+}
+
+function calculoPotenciaB(b, a) {
+  return b ** a;
+}
+
+function calculoRaizA(a) {
+  return Math.sqrt(a).toFixed(2);
+}
+
+function calculoRaizB(b) {
+  return Math.sqrt(b).toFixed(2);
+}
+
+const calculoFatorialA = (a) => {
+  if (a > 1) {
+    return a * calculoFatorialA(a - 1);
+  }
+  return a;
+};
+
+const calculoFatorialB = (b) => {
+  if (b > 1) {
+    return b * calculoFatorialB(b - 1);
+  }
+  return b;
+};
+
+function calculoPorcentagemA(a, b) {
+  return Math.round((b / a) * 100);
+}
+
+function calculoPorcentagemB(b, a) {
+  return (a / b) * 100;
+}
+
+function calculoMedia(a, b) {
+  return (a + b) / 2;
+}
+
 // criar uma função ao clicar no botão calcular
 
 const calcular = () => {
@@ -58,4 +112,16 @@ const calcular = () => {
   soma.innerHTML = calculoSoma(a, b);
   subtracaoA.innerHTML = calculoSubtracaoA(a, b);
   subtracaoB.innerHTML = calculoSubtracaoB(b, a);
+  multiplicacao.innerHTML = calculoMultiplicacao(a, b);
+  divisaoA.innerHTML = calculoDivisaoA(a, b);
+  divisaoB.innerHTML = calculoDivisaoB(b, a);
+  potenciaA.innerHTML = calculoPotenciaA(a, b);
+  potenciaB.innerHTML = calculoPotenciaB(b, a);
+  raizA.innerHTML = calculoRaizA(a);
+  raizB.innerHTML = calculoRaizB(b);
+  fatorialA.innerHTML = calculoFatorialA(a);
+  fatorialB.innerHTML = calculoFatorialB(b);
+  porcentagemA.innerHTML = calculoPorcentagemA(a, b) + "%";
+  porcentagemB.innerHTML = calculoPorcentagemB(b, a) + "%";
+  media.innerHTML = calculoMedia(a, b);
 };
